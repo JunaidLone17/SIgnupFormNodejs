@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Register</title>
+</head>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+body {
+  margin: none;
+  background: mediumpurple;
+ font-family: 'Mochiy Pop One', sans-serif;
+}
+.container {
+  margin: auto;
+  margin-top: 10vh;
+  border: none;
+  outline: none;
+  box-shadow: 0.1px 0.5px 1.1px 0.9px rgb(255, 255, 255);
+  width: 70vh;
+  height: 70vh;
+  color: black;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background: white;
+  border-radius: 15px;
+}
+.register input {
+  color: black;
+  width: 95%;
+  height: 08vh;
+  margin-top: 25px;
+  margin-left: 7px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid purple;
+  font-family: 'Mochiy Pop One', sans-serif;
+
+  background: white;
+}
+
+.register button {
+  width: 97%;
+  height: 08vh;
+  font-family: 'Mochiy Pop One', sans-serif;
+  margin-top: 30px;
+  margin-left: 7px;
+  text-align: center;
+  border: 1px solid purple;
+  background: purple;
+  border-radius: 13px;
+  color: black;
+}
+.submit:hover {
+  background: transparent;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <form action="/register" method="post" class="register">
+            <input type="text" name="FullName" id="fullname" placeholder="Full Name"/>
+            <input type="number" name="PhoneNumber" id="phonenumber" placeholder="Phone Number" />
+            <input type="password" name="Password" placeholder="Password" id="password" />
+            <input type="email" name="email" value="" placeholder="Email" id="email"/>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
